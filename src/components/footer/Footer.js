@@ -2,7 +2,7 @@ import vk from './../../img/icons/vk.svg'
 import instagram from './../../img/icons/instagram.svg'
 import twitter from './../../img/icons/twitter.svg'
 import gitHub from './../../img/icons/gitHub.svg'
-import linkedIn from './../../img/icons/linkedIn.svg'
+// import linkedIn from './../../img/icons/linkedIn.svg'
 import './style.css'
 
 const Footer = () => {
@@ -31,11 +31,11 @@ const Footer = () => {
 								<img src={gitHub} alt='Link' />
 							</a>
 						</li>
-						<li className='social__item'>
+						{/* <li className='social__item'>
 							<a href='#!'>
 								<img src={linkedIn} alt='Link' />
 							</a>
-						</li>
+						</li> */}
 					</ul>
 					<div className='copyright'>
 						<p>© 2025 frontend-dev.com</p>
@@ -46,4 +46,4 @@ const Footer = () => {
 	)
 }
 
-export default Header
+export default Footer

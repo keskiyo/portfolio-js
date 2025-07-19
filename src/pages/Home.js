@@ -10,7 +10,7 @@ const Home = () => {
 						<li className='content-list__item'>
 							<h2 className='title-2'>Frontend</h2>
 							<p>
-								JavaScript, TypeScript, ReactJS, HTML, CSS, NPM, BootStrap,
+								JavaScript, TypeScript, ReactJS, Vue, HTML, CSS, NPM, BootStrap,
 								TailwindCSS, StyledComponents
 							</p>
 						</li>

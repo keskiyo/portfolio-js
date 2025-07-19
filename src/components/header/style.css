@@ -8,14 +8,25 @@
 	justify-content: center;
 	align-items: center;
 
-	background-color: var(--header-bg);
-	background-image: url('./../../img/header-bg.png');
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: center center;
+	/* Градиент с анимацией */
+	background: var(--header-gradient);
+	background-size: 200% 200%;
+	animation: gradientAnimation 10s ease infinite;
 
 	color: var(--header-text);
 	text-align: center;
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .header__wrapper {

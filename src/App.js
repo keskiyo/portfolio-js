@@ -1,22 +1,32 @@
-import './styles/main.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './utils/scrollToTop'
 
 import Navbar from './components/navbar/Navbar'
-import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
+
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import ProjectPage from './pages/ProjectPage'
 import Contacts from './pages/Contacts'
+
+import './styles/main.css'
 
 function App() {
 	return (
 		<div className='App'>
-			<Navbar />
+			<Router>
+				<ScrollToTop />
+				<Navbar />
 
-			{/* <Home /> */}
-			{/* <Projects /> */}
-			<Contacts />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/projects' element={<Projects />} />
+					<Route path='/project/:id' element={<ProjectPage />} />
+					<Route path='/сontacts' element={<Contacts />} />
+				</Routes>
 
-			<Footer />
+				<Footer />
+			</Router>
 		</div>
 	)
 }
